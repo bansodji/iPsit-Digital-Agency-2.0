@@ -27,6 +27,9 @@
     <!--Google Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--Local-->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
@@ -35,7 +38,16 @@
     <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
 </head>
 
-<body>
+<body onload="preloader_fun()">
+
+    <!--========Preloader========-->
+    <div id="loading" class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center text-light" style="width: inherit; height: inherit;">
+            <div class="spinner-border f-color-3" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
 
     <!--========SVG Waves========-->
     <div>
@@ -115,18 +127,18 @@
                         <img src="img/bg.svg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6">
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <h1 class="font-x">We are creative digital agency</h1>
                         </div>
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <h4>iPsit is a creative digital agency that specializes in strategy, creativity, design and
                                 innovative technology.</h4>
                         </div>
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <a href="#"><button class="f-btn-1">Get Started</button></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 img-col-2">
+                    <div class="col-lg-6 img-col-2" data-aos="fade-up">
                         <img src="img/bg.svg" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -144,18 +156,18 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-sm-6 border-right">
+                <div class="col-lg-6 col-md-6 col-sm-6 border-right" data-aos="fade-up">
                     <h1 class="font-lg">Be an expert web developer with us</h1>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center" data-aos="fade-up">
                     <h3 class="f-color-3 font-6 uppercase">About Us</h3>
                 </div>
 
-                <div class="col-lg-6 margin-top pt-4">
+                <div class="col-lg-6 margin-top pt-4" data-aos="fade-up">
                     <img src="img/about.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-6 margin-top pt-4">
+                <div class="col-lg-6 margin-top pt-4" data-aos="fade-up">
                     <div>
                         <h5 class="fff-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic laudantium
                             possimus inventore, sit illum expedita mollitia eius nostrum nesciunt assumenda maiores
@@ -175,21 +187,20 @@
     <!--========Our Services========-->
     <section class="services my-5 py-5 margin-top-1">
         <div class="container py-5 margin-top-1">
+            <!--====Heading====-->
             <div class="row">
-                <!--====Heading====-->
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end" data-aos="fade-up">
                     <h3 class="f-color-3 font-6 uppercase">Our Services</h3>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 border-left">
+                <div class="col-lg-6 col-md-6 col-sm-6 border-left" data-aos="fade-up">
                     <h1 class="font-lg text-end">What we offer</h1>
                 </div>
             </div>
-
+            <!--====Content====-->
             <div class="row mt-5 pt-5">
-                <!--====Content====-->
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up">
                             <div class="flex-center">
                                 <span class="material-icons icon-x f-color-2 mb-4">important_devices</span>
                                 <h3 class="font-6 mb-4">Web development</h3>
@@ -198,7 +209,7 @@
                                     obcaecati ratione vero, unde eveniet corrupti quam accusamus tempora!</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up">
                             <div class="flex-center">
                                 <span class="material-icons icon-x f-orange mb-4">stream</span>
                                 <h3 class="font-6 mb-4">Design codinig</h3>
@@ -207,7 +218,7 @@
                                     obcaecati ratione vero, unde eveniet corrupti quam accusamus tempora!</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up">
                             <div class="flex-center">
                                 <span class="material-icons icon-x f-color-3 mb-4">token</span>
                                 <h3 class="font-6 mb-4">Logo desinging</h3>
@@ -216,7 +227,7 @@
                                     obcaecati ratione vero, unde eveniet corrupti quam accusamus tempora!</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up">
                             <div class="flex-center">
                                 <span class="material-icons icon-x f-color-1 mb-4">receipt_long</span>
                                 <h3 class="font-6 mb-4">Content writing</h3>
@@ -227,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 disappear">
+                <div class="col-lg-4 disappear" data-aos="fade-up">
                     <img src="img/services.svg" class="img-fluid" alt="">
                 </div>
             </div>
@@ -244,20 +255,19 @@
         </svg>
 
         <div class="container position-relative zi-10">
+            <!--====Heading====-->
             <div class="row">
-                <!--====Heading====-->
-                <div class="col-lg-6 col-md-6 col-sm-6 border-right">
+                <div class="col-lg-6 col-md-6 col-sm-6 border-right" data-aos="fade-up">
                     <h1 class="font-lg text-start">Our works</h1>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center" data-aos="fade-up">
                     <h3 class="f-color-3 font-6 uppercase">Portfolio</h3>
                 </div>
             </div>
-
+            <!--====Content====-->
             <div class="row mt-5 py-5">
-                <!--====Content====-->
                 <!--Img-1-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-1" class="portfolio-container">
                             <div class="box">
@@ -270,7 +280,7 @@
                     </a>
                 </div>
                 <!--Img-2-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-2" class="portfolio-container">
                             <div class="box">
@@ -283,7 +293,7 @@
                     </a>
                 </div>
                 <!--Img-3-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-3" class="portfolio-container">
                             <div class="box">
@@ -296,7 +306,7 @@
                     </a>
                 </div>
                 <!--Img-4-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-4" class="portfolio-container">
                             <div class="box">
@@ -309,7 +319,7 @@
                     </a>
                 </div>
                 <!--Img-5-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-5" class="portfolio-container">
                             <div class="box">
@@ -322,7 +332,7 @@
                     </a>
                 </div>
                 <!--Img-6-->
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5" data-aos="fade-up">
                     <a href="#">
                         <div id="folio-pc-6" class="portfolio-container">
                             <div class="box">
@@ -350,16 +360,16 @@
         <div class="container">
             <!--====Heading====-->
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end" data-aos="fade-up">
                     <h3 class="f-color-3 font-6 uppercase">Our News</h3>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 border-left">
+                <div class="col-lg-6 col-md-6 col-sm-6 border-left" data-aos="fade-up">
                     <h1 class="font-lg text-end">Latest from our blog</h1>
                 </div>
             </div>
             <!--====Content====-->
             <div class="row mt-5 pt-5">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
                     <div>
                         <img src="img/blog/blog1.svg" class="img-fluid f-img mb-4" alt="">
                         <h4 class="font-6 mb-4">How collaborative teams create meaningful things in this time</h4>
@@ -368,7 +378,7 @@
                             repellendus!</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
                     <div>
                         <img src="img/blog/blog2.svg" class="img-fluid f-img mb-4" alt="">
                         <h4 class="font-6 mb-4">How collaborative teams create meaningful things in this time</h4>
@@ -377,7 +387,7 @@
                             repellendus!</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
                     <div>
                         <img src="img/blog/blog3.svg" class="img-fluid f-img mb-4" alt="">
                         <h4 class="font-6 mb-4">How collaborative teams create meaningful things in this time</h4>
@@ -385,6 +395,9 @@
                             odio. Ad sit dolor
                             repellendus!</p>
                     </div>
+                </div>
+                <div class="d-flex align-items-end" data-aos="fade-up">
+                    <a href="#" class="font-6 f-color-3 fs-5">More Blogs <i class="fas fa-angle-double-right f-color-3"></i></a>
                 </div>
             </div>
         </div>
@@ -395,26 +408,26 @@
         <div class="container padding-top padding-bottom">
             <!--====Heading====-->
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 border-right">
+                <div class="col-lg-6 col-md-6 col-sm-6 border-right" data-aos="fade-up">
                     <h1 class="font-lg text-start">Our technical skills</h1>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center" data-aos="fade-up">
                     <h3 class="f-color-3 font-6 uppercase">Our Expertise</h3>
                 </div>
             </div>
             <!--====Content====-->
             <div class="row mt-5 pt-5">
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 mb-4" data-aos="fade-up">
                     <img src="img/expertise.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6">
-                    <div class="mb-4 pb-5">
+                    <div class="mb-4 pb-5" data-aos="fade-up">
                         <h5 class="fff-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero totam sequi,
                             velit consequuntur debitis animi quis, ab unde, sit pariatur explicabo quia aspernatur odit
                             doloribus.</h5>
                     </div>
                     <div>
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <p>Web Designing</p>
                             <div class="progress">
                                 <div class="progress-bar f-bg-color-1" role="progressbar" style="width: 80%"
@@ -422,7 +435,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <p>Web Development</p>
                             <div class="progress">
                                 <div class="progress-bar f-bg-color-3" role="progressbar" style="width: 70%"
@@ -430,7 +443,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-5">
+                        <div class="mb-5" data-aos="fade-up">
                             <p>Optimization</p>
                             <div class="progress">
                                 <div class="progress-bar f-bg-orange" role="progressbar" style="width: 80%"
@@ -452,10 +465,10 @@
             <div class="container">
                 <!--====Heading====-->
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end" data-aos="fade-up">
                         <h3 class="f-color-3 font-6 uppercase">Newsletter</h3>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 border-left">
+                    <div class="col-lg-6 col-md-6 col-sm-6 border-left" data-aos="fade-up">
                         <h1 class="font-lg text-end">Subscribe us for updates</h1>
                     </div>
                 </div>
@@ -463,13 +476,13 @@
                 <div class="row mt-5 pt-5">
                     <div class="col-lg-6"></div>
                     <div class="col-lg-6">
-                        <div>
+                        <div data-aos="fade-up">
                             <h5 class="fff-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem esse
                                 sunt praesentium
                                 temporibus nisi.</h5>
                         </div>
                         <form action="">
-                            <div class="row mt-5">
+                            <div class="row mt-5" data-aos="fade-up">
                                 <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
                                     <input type="text" name="email" placeholder="Your email address" class="f-form-1">
                                 </div>
@@ -488,25 +501,25 @@
             <div class="container my-5 pt-5">
                 <!--====Heading====-->
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 border-right">
+                    <div class="col-lg-6 col-md-6 col-sm-6 border-right" data-aos="fade-up">
                         <h1 class="font-lg text-start">Feel free to contact</h1>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center" data-aos="fade-up">
                         <h3 class="f-color-3 font-6 uppercase">Contact</h3>
                     </div>
                 </div>
                 <!--====Content====-->
                 <div class="row mt-5">
                     <div class="col-lg-6">
-                        <div class="d-flex mb-4">
+                        <div class="d-flex mb-4" data-aos="fade-up">
                             <i class="fas fa-map-marker-alt fs-4 me-4"></i>
                             <p>908 New Hampshire Avenue #100, Washington, 20037, United States</p>
                         </div>
-                        <div class="d-flex mb-4">
+                        <div class="d-flex mb-4" data-aos="fade-up">
                             <i class="fas fa-mobile-alt fs-4 me-4"></i>
                             <p>Phones: +1 916-875-2235, +1 916-875-2235</p>
                         </div>
-                        <div class="d-flex mb-4">
+                        <div class="d-flex mb-4" data-aos="fade-up">
                             <i class="far fa-envelope fs-4 me-4"></i>
                             <p>Email: info@domain.com</p>
                         </div>
@@ -576,6 +589,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!--========Preloader========-->
+    <script>
+        var preloader = document.getElementById('loading');
+
+        function preloader_fun() {
+            preloader.style.display = 'none';
+        }
+    </script>
+
+    <!--========AOS========-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 500,
+            once: true
+        });
+    </script>
 
 </body>
 

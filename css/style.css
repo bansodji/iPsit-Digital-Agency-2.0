@@ -39,6 +39,10 @@
   color: #05F4B7;
 }
 
+.f-color-3:hover {
+  color: #05F4B7;
+}
+
 .f-bg-color-3 {
   background: #05F4B7;
 }
@@ -152,7 +156,7 @@ p {
   width: 100%;
   height: 50px;
   border: none;
-  background: #ffffff0a;
+  background: #ffffff2d;
   outline: none;
   padding: 20px;
   border-radius: 50px;
@@ -327,6 +331,14 @@ p {
   .font-x {
     font-size: 2.4rem;
   }
+}
+
+#loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #12151F;
+  z-index: 100;
 }
 
 body {
