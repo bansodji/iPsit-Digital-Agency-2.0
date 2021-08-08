@@ -1,0 +1,43 @@
+$black: #12151F;
+$theme-1: #1181B2;
+$theme-2: #44449B;
+$theme-3: #05F4B7;
+$orange: #fc5d5d;
+
+$theme-1a: #1182b2de;
+$theme-2a: #44449Bde;
+$theme-3a: #05f4b875;
+$orange-a: #fc5d5d7a;
+$black-a: #12151fb7;
+
+$theme-1b: #1182b29c;
+$theme-2b: #44449B9c;
+
+
+@mixin full-page{
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin page-100{
+    width: 100%;
+    height: 100%;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin bg-cover{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,101 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+}
+
+@import "_mycss";
+
+body{
+    background: $black;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+#menu-icn{display: none;}
+
+.svg{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.svg-bottom{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.stucky-navbar{
+    position: fixed;
+    width: 100%;
+}
+
+.img-col-1{display: none}
+
+.hero{
+    @include full-page;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    margin-top: 5rem;
+}
+
+.about{
+    position: relative;  
+    
+    .img-shape{
+        position: absolute;
+        left: -5%;
+        width: 38%;
+    }
+}
+
+.services{
+    position: relative;
+    background: url("../img/blob-1.svg");
+    @include bg-cover;
+}
+
+.portfolio{
+    position: relative;
+
+    .portfolio-container{
+        width: 100%;
+        height: 27rem;
+        overflow: hidden;
+        position: relative;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.blog{
+    position: relative;
+}
+
+.expertise{
+    position: relative;
+    background: url("../img/blob-2.svg");
+    @include bg-cover;
+}
+
+.newsletter, .contact, .copyright{
+    position: relative;
+    z-index: 10;
+}
+
+
+@media (max-width: 992px){
+    #menu-icn{display: block;}
+
+    .about .img-shape{display: none;}
+
+    .img-col-1{display: block}
+    .img-col-2{display: none}
+}
