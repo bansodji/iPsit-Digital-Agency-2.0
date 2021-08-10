@@ -223,7 +223,7 @@ p{font-size: 15px;}
 }
 
 
-//****************Get-Started********************//
+//**********************Get-Started************************//
 
 .w-100{
     width: 100%;
@@ -350,6 +350,11 @@ form a{
 
 
 
+
+
+
+
+
 //*******************Media Query********************//
 
 @media (max-width: 992px){
@@ -361,7 +366,7 @@ form a{
     .padding-top{padding-top: 0;}
     .padding-bottom{padding-bottom: 0;}
 
-    
+
     .hide-992{display: none;}
     .blob{
         clip-path: ellipse(100% 55% at 0% 0%);
